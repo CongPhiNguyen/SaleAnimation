@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="Back"
+                    android:text="Back"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="right">
+
+                <ImageView
+                    android:id="@+id/cart"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="50dp"
+                    android:src="@drawable/cart"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/laptop"
+            android:layout_gravity="center_horizontal"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giá: 20.000.000đ"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="50dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right">
+                <Button
+                    android:id="@+id/buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:onClick="Buy"
+                    android:text="Mua"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+        <TextView
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="7"
+            android:text="CPU: Intel Core i7 10510U 1.8GHz up to 4.9GHz\nSSD: 112GB SSD / Ram: 16GB DDR4, 2133MHz\nVGA: Intel UHD Graphics. Finger Print.\nDisplay: 13.3 inch UHD 4K (3840 x 2160) Touch. X360. Dell Active PEN.\nOS: Windows 10 Home."
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"/>
+    </LinearLayout>
+
+</LinearLayout>
